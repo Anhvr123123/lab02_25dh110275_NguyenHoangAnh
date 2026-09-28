@@ -1,0 +1,203 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        h2 {
+            margin: 0 0 28px 0;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .recipe {
+            width: 488px;
+            margin-left: 68px;
+            background-color: #d90000;
+            border: 3px solid #b30000;
+            color: white;
+            font-size: 11px;
+        }
+
+            .recipe table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .recipe th {
+                height: 32px;
+                padding: 0 12px;
+                text-align: left;
+                font-size: 13px;
+                font-weight: normal;
+                background-color: #d90000;
+                border-bottom: 1px dotted #eeeeee;
+            }
+
+                .recipe th:nth-child(1) {
+                    width: 50%;
+                }
+
+                .recipe th:nth-child(2) {
+                    width: 25%;
+                }
+
+                .recipe th:nth-child(3) {
+                    width: 25%;
+                }
+
+            .recipe td {
+                height: 22px;
+                padding: 0 12px;
+                vertical-align: middle;
+            }
+
+
+            .recipe tr:nth-child(even) td {
+                background-color: #df4d4d;
+            }
+
+            .recipe tr:nth-child(odd) td {
+                background-color: #c90000;
+            }
+
+            .recipe .ingredients {
+                background-color: #d90000 !important;
+            }
+
+            .recipe .instructions {
+                padding: 7px 10px 8px 10px;
+                background-color: #d90000 !important;
+                line-height: 13px;
+            }
+
+            .recipe .instructions-title {
+                margin-bottom: 5px;
+            }
+
+            .recipe ol {
+                margin: 0;
+                padding-left: 22px;
+            }
+
+            .recipe li {
+                padding-left: 2px;
+                margin-bottom: 2px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="recipe">
+
+        <table>
+
+
+            <tr>
+                <th class="ingredients">Ingredients</th>
+                <th class="ingredients">serves 12</th>
+                <th class="ingredients">serves 24</th>
+            </tr>
+
+
+            <tr>
+                <td>milk</td>
+                <td>1 quart</td>
+                <td>2 quart</td>
+            </tr>
+
+            <tr>
+                <td>cinnamon sticks</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>vanilla bean, split</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>cloves</td>
+                <td>5</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>mace</td>
+                <td>10 blades</td>
+                <td>20 blades</td>
+            </tr>
+
+            <tr>
+                <td>egg yolks</td>
+                <td>12</td>
+                <td>24</td>
+            </tr>
+
+            <tr>
+                <td>cups sugar</td>
+                <td>1 ½ cups</td>
+                <td>3 cups</td>
+            </tr>
+
+            <tr>
+                <td>dark rum</td>
+                <td>1 ½ cups</td>
+                <td>3 cups</td>
+            </tr>
+
+            <tr>
+                <td>brandy</td>
+                <td>1 ½ cups</td>
+                <td>3 cups</td>
+            </tr>
+
+            <tr>
+                <td>vanilla</td>
+                <td>1 tbsp</td>
+                <td>2 tbsp</td>
+            </tr>
+
+            <tr>
+                <td>half-and-half or light cream</td>
+                <td>1 quart</td>
+                <td>2 quart</td>
+            </tr>
+
+            <tr>
+                <td>Freshly grated nutmeg to taste</td>
+            </tr>
+
+
+            <tr>
+                <td colspan="3" class="instructions">
+
+                    <ol>
+                        <li>
+                            Combine milk and spices including vanilla bean in a heavy saucepan
+                            and let them infuse over
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+</html>
+
+

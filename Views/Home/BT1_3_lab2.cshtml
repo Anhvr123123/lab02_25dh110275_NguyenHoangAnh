@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>List Style Type</title>
+
+    <style>
+        body {
+            margin: 10px 25px;
+            font-family: "Times New Roman", serif;
+        }
+
+        table {
+            width: 505px;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+
+        td {
+            border: 1px solid #555;
+            height: 50px;
+            vertical-align: top;
+            padding: 3px 8px;
+        }
+
+        .code {
+            width: 260px;
+            font-family: "Courier New", monospace;
+            font-size: 10px;
+            padding-left: 25px;
+        }
+
+        .result {
+            width: 245px;
+            font-size: 14px;
+            padding-left: 25px;
+        }
+
+        .roman {
+            list-style-type: upper-roman;
+            margin: 0;
+            padding-left: 25px;
+        }
+
+        .square {
+            list-style-type: square;
+            margin: 0;
+            padding-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="code">
+                &lt;ul style="list-style-type:upper-roman;"&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;item 2&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </td>
+
+            <td class="result">
+                <ol class="roman">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="code">
+                &lt;ul style="list-style-type:square;"&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;square item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;square item 2&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </td>
+
+            <td class="result">
+                <ul class="square">
+                    <li>square item 1</li>
+                    <li>square item 2</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

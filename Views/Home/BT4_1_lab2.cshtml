@@ -1,0 +1,122 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: white;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            text-decoration: underline;
+        }
+
+        .g5-table {
+            width: 640px;
+            border-collapse: collapse;
+            background-color: #f4f8fa;
+            font-size: 11px;
+            color: #666;
+            border: 4px solid #e5ebee;
+        }
+
+            .g5-table caption {
+                caption-side: top;
+                text-align: right;
+                font-size: 9px;
+                font-style: italic;
+                color: #6d8d99;
+                padding-bottom: 3px;
+            }
+
+            .g5-table th {
+                height: 27px;
+                text-align: left;
+                padding: 0 10px;
+                color: #52727e;
+                letter-spacing: 1px;
+                background: linear-gradient(to right, #e4f5fa, #c9e6ee);
+                border: 1px solid #c5d8de;
+            }
+
+            .g5-table td {
+                height: 26px;
+                padding: 0 10px;
+                border: 1px solid #cbdde2;
+                background-color: #f7fafb;
+            }
+
+                .g5-table td:first-child {
+                    font-weight: bold;
+                    color: #577783;
+                    letter-spacing: 1px;
+                }
+
+            .g5-table tr:nth-child(even) td {
+                background-color: #edf4f6;
+            }
+
+        .arrow {
+            color: #f0a000;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2></h2>
+
+    <table class="g5-table">
+
+        <caption>Table 1: Power Mac G5 tech specs</caption>
+
+        <tr>
+            <th>CONFIGURATIONS</th>
+            <th>DUAL 1.8GHZ</th>
+            <th>DUAL 2GHZ</th>
+            <th>DUAL 2.5GHZ</th>
+        </tr>
+
+        <tr>
+            <td><span class="arrow"></span>MODEL</td>
+            <td>M9454LL/A</td>
+            <td>M9455LL/A</td>
+            <td>M9457LL/A</td>
+        </tr>
+
+        <tr>
+            <td><span class="arrow"></span>G5 PROCESSOR</td>
+            <td>Dual 1.8GHz PowerPC G5</td>
+            <td>Dual 2GHz PowerPC G5</td>
+            <td>Dual 2.5GHz PowerPC G5</td>
+        </tr>
+
+        <tr>
+            <td><span class="arrow"></span>FRONTSIDE BUS</td>
+            <td>900MHz per processor</td>
+            <td>1GHz per processor</td>
+            <td>1.25GHz per processor</td>
+        </tr>
+
+        <tr>
+            <td><span class="arrow"></span>LEVEL 2 CACHE</td>
+            <td>512K per processor</td>
+            <td>512K per processor</td>
+            <td>512K per processor</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

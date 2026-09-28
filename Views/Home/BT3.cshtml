@@ -1,0 +1,194 @@
+﻿@{ 
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Bài báo 3 Cột</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            background-color: #fff;
+            position: relative;
+        }
+
+        /* Layout 3 cột */
+        .main-wrapper {
+            display: flex;
+            min-height: 500px;
+        }
+
+        /* Cột trái */
+        .left-column {
+            width: 220px;
+            background-color: #ffffc0;
+            border-right: 1px solid #000;
+            padding: 15px;
+        }
+
+            .left-column h3 {
+                font-size: 16px;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+
+            .left-column ul {
+                list-style-type: none;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+                .left-column ul li a {
+                    color: #000;
+                    text-decoration: underline;
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 2px;
+                }
+
+        /* Cột giữa */
+        .center-column {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #000;
+        }
+
+            .center-column h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .center-column h2 {
+                font-size: 18px;
+                margin: 15px 0 10px 0;
+            }
+
+            .center-column p {
+                margin-bottom: 15px;
+                font-size: 14px;
+                text-align: justify;
+            }
+
+        .article-image {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+        }
+
+        .license-info {
+            margin-top: 20px;
+            font-size: 13px;
+        }
+
+        /* Cột phải */
+        .right-column {
+            width: 200px;
+            background-color: #f08080;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f08080;
+            border-top: 1px solid #000;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="margin-bottom: 10px;"><u>Bài 3 :</u></h2>
+
+    <div class="container">
+        <div class="main-wrapper">
+
+            <!-- Cột bên trái -->
+            <aside class="left-column">
+                <h3>Templates</h3>
+                <ul>
+                    <li><a href="#">Left Column</a></li>
+                    <li><a href="#">Right Column</a></li>
+                    <li><a href="#">Top & Right</a></li>
+                    <li><a href="#">3 Column</a></li>
+                    <li><a href="#">3 Column & Footer</a></li>
+                </ul>
+
+                <h3>Threaded</h3>
+                <ul>
+                    <li><a href="#">Threaded Item</a></li>
+                    <li><a href="#">Unthreaded</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">prosandcons1</a></li>
+                    <li><a href="#">prosandcons2</a></li>
+                    <li><a href="#">spider1</a></li>
+                </ul>
+            </aside>
+
+            <!-- Cột chính giữa (Bài báo Porsche) -->
+            <main class="center-column">
+                <h1>Porsche 911 GT3 RS: Biểu tượng tốc độ</h1>
+
+                <p>Porsche 911 GT3 RS là mẫu xe thể thao thương mại được tối ưu hóa cho đường đua, mang lại cảm giác lái đỉnh cao và hiệu suất vượt trội nhờ vào công nghệ khí động học tiên tiến.</p>
+
+                <!-- Hình ảnh trực tiếp của Porsche -->
+                <img class="article-image" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80" alt="Porsche 911">
+
+                <h2>Thông số & Thiết kế</h2>
+                <p>Với khối động cơ hút khí tự nhiên 4.0L sản sinh công suất mạnh mẽ, Porsche tiếp tục khẳng định vị thế dẫn đầu trong phân khúc xe thể thao hạng sang. Khung gầm nhẹ kết hợp cùng cánh gió phía sau giúp tăng tối đa lực ép xuống mặt đường khi ở tốc độ cao.</p>
+
+                <p>Nội thất của xe được tinh giản tối đa để giảm trọng lượng nhưng vẫn giữ được nét sang trọng đặc trưng với chất liệu Alcantara và sợi carbon cao cấp.</p>
+
+                <div class="license-info">
+                    <p>Thiết kế theo chuẩn Creative Commons License.</p>
+                </div>
+            </main>
+
+            <!-- Cột bên phải -->
+            <aside class="right-column">
+                There is nothing in this world constant but inconstancy.
+            </aside>
+
+        </div>
+
+        <!-- Chân trang -->
+        <footer class="footer">
+            Designed by Ben Meadowcroft
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlighten Designs</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #555555;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* Container chính căn giữa màn hình */
+        .wrapper {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        /* Thanh điều hướng Header */
+        header {
+            margin-top: 20px;
+            background-color: #e6e6e6;
+            height: 45px;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding-left: 10px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #444444;
+                font-weight: bold;
+                font-size: 12px;
+                padding: 0 18px;
+                display: block;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            /* Tab ABOUT nổi bật màu cam */
+            nav ul li.active-tab {
+                background-color: #d96300;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                z-index: 10;
+            }
+
+                nav ul li.active-tab a {
+                    color: #ffffff;
+                }
+
+        /* --- Bố cục Phần Banner --- */
+        .header-banner {
+            display: flex;
+            position: relative;
+            height: 180px;
+            margin-bottom: 25px;
+        }
+
+        /* Khối màu cam bên trái nối thẳng từ tab ABOUT xuống */
+        .orange-block {
+            width: 80px;
+            background-color: #d96300;
+            height: 100%;
+            flex-shrink: 0;
+        }
+
+        /* Phần chứa ảnh banner bên phải */
+        .banner-image {
+            position: relative;
+            flex-grow: 1;
+            height: 100%;
+            overflow: hidden;
+        }
+
+            .banner-image img.bg-banner {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+        /* Logo nằm đè trên ảnh góc phải */
+        .logo-overlay {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #0d0d0d;
+            color: #ffffff;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            z-index: 5;
+        }
+
+            .logo-overlay span {
+                font-weight: normal;
+            }
+
+        /* --- Bố cục nội dung 2 cột --- */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .left-column {
+            width: 48%;
+        }
+
+        .right-column {
+            width: 48%;
+        }
+
+        /* Định dạng các tiêu đề */
+        h2.title-left {
+            color: #d96300;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        h2.title-right {
+            color: #8c9e35;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666666;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #d96300;
+            text-decoration: underline;
+        }
+
+        /* Thông tin liên hệ */
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .contact-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 12px;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+
+            .contact-table td {
+                padding: 2px 0;
+                vertical-align: top;
+            }
+
+                .contact-table td.label {
+                    width: 70px;
+                }
+
+        .more-contact {
+            color: #d96300;
+            font-size: 11px;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+        }
+
+        /* Danh sách dự án nổi bật */
+        .project-item {
+            margin-bottom: 18px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #333333;
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+
+        .project-desc {
+            font-size: 12px;
+            color: #666666;
+            line-height: 1.5;
+        }
+
+            .project-desc a {
+                color: #8c9e35;
+                text-decoration: underline;
+            }
+
+        /* Chân trang Footer */
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eeeeee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 10px;
+            color: #999999;
+            padding-bottom: 40px;
+        }
+
+        .footer-left p {
+            font-size: 10px;
+            color: #999999;
+            margin-bottom: 2px;
+        }
+
+        .footer-right a {
+            color: #888888;
+            text-decoration: none;
+            margin: 0 3px;
+        }
+
+            .footer-right a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Header / Navigation -->
+        <header>
+            <nav>
+                <ul>
+                    <li class="active-tab"><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner chứa ảnh và khối màu cam -->
+        <div class="header-banner">
+            <div class="orange-block"></div>
+            <div class="banner-image">
+                <img class="bg-banner" src="~/Content/images/anhlab2.jpg" alt="Banner Image">
+                <div class="logo-overlay">
+                    Nguyễn<span> Hoàng Anh</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Cột bên trái -->
+            <div class="left-column">
+                <h2 class="title-left">About</h2>
+                <p>
+                    <strong style="color:darkblue";>Nguyễn Hoàng Anh</strong> is an Internet solutions provider that specialises in front and back end development. To view some of the web sites we have created view our <a href="#">portfolio</a>.
+                </p>
+                <p>
+                    We are currently undergoing a 'face lift', so if you have any questions or would like more information about the services we provide please feel free to contact us.
+                </p>
+
+                <h2 class="title-left" style="margin-top: 25px;">Contact Us</h2>
+                <div class="contact-info">
+                    <table class="contact-table">
+                        <tr>
+                            <td class="label">Phone:</td>
+                            <td>(07) 853 6060</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Fax:</td>
+                            <td>(07) 853 6060</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Email:</td>
+                            <td><a href="mailto:info@enlighten.co.nz">info@nguyenhoanganh.co.nz</a></td>
+                        </tr>
+                        <tr>
+                            <td class="label">P.O Box:</td>
+                            <td>14159, Hamilton, New Zealand</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <a href="#" class="more-contact">More contact information...</a>
+            </div>
+
+            <!-- Cột bên phải -->
+            <div class="right-column">
+                <h2 class="title-right">Featured Projects</h2>
+
+                <div class="project-item">
+                    <div class="project-title">The New Zealand National Party</div>
+                    <div class="project-desc">
+                        We recently launched the <a href="#">New Zealand National Party</a> website - Lorem ipsum dolor sit amet. Pita ala pesama borak na falanuisen.
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title">Greensets</div>
+                    <div class="project-desc">
+                        We recently launched the <a href="#">Greensets</a> website - Lorem ipsum dolor sit amet. Pita ala pesama borak na falanuisen.
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title">Nutrition Care</div>
+                    <div class="project-desc">
+                        We recently launched the <a href="#">Nutrition Care</a> website - Lorem ipsum dolor sit amet. Pita ala pesama borak na falanuisen.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-left">
+                <p>Copyright © NguyenHoangAnh</p>
+                <p>Powered by NguyenHoangAnh</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">About</a> -
+                <a href="#">Services</a> -
+                <a href="#">Portfolio</a> -
+                <a href="#">Contact Us</a> -
+                <a href="#">Terms of Trade</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

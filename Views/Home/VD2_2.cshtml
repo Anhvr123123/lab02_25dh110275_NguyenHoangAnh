@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Ví dụ 2 </title>
+    <style type="text/css">
+        table.mytable {
+            border-collapse: collapse
+        }
+        th.mytable {
+            border-top: 3px solid black;
+            border-bottom: 2px solid black;
+            background: violet;
+            font: bold;
+            color: white;
+            text-align: left
+        }
+
+        td.mytable_column1 {
+            background-color: gainsboro;
+        }
+        tr.mytable {
+            border-bottom: 3px solid black;
+            border-top: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table class="mytable">
+        <tr>
+            <th class="mytable" width="150">header 1</td>
+            <th class="mytable" width="150">header 2</td>
+            <th class="mytable" width="150">header 3</td>
+        </tr>
+        <tr>
+            <td class="mytable_column1">column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+        </tr>
+        <tr>
+            <td class="mytable_column1">column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+        </tr>
+        <tr class="mytable">
+            <td class="mytable_column1">column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+        </tr>
+    </table>
+</body>
+</html>

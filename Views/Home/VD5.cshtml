@@ -1,0 +1,70 @@
+﻿_@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dàn trang Web</title>
+    <style type="text/css">
+        body {
+            background-color: antiquewhite;
+            font-family: 'Book Antiqua', Calibri,'Courier';
+        }
+
+        #container {
+            border: 3px solid yellow;
+            /khi dựng border thật kh cần đẻ border cho các khối/ background-color:lightcoral;
+            width: 90%;
+            margin: auto;
+        }
+
+        #banner {
+            background-color: indianred;
+            heigth: 100px;
+        }
+
+        #navigator #footer {
+            background-color: palevioletred;
+            height: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: 1px solid yellow;
+        }
+
+        #navigator {
+            border-bottom: 1px solid-yellow;
+        }
+
+        #sidebar {
+            /display: block;
+            / background-color: peachpuff;
+            width: 150px;
+            min-height: 400px;
+            float: left;
+            border-rigth: 1px solid yellow;
+        }
+
+        #content {
+            /float:left;
+            / margin-left:150px;
+            min-height: 400px;
+            background-color: floralwhite;
+        }
+
+        #footer {
+            background-color: lightpink;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">BANNER</div>
+        <div id="navigator">NAVIGATOR</div>
+        <div id="sidebar">SIDEBAR</div>
+        <div id="content">CONTENT</div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

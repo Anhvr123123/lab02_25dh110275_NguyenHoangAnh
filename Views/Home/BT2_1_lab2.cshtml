@@ -1,0 +1,280 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forum</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        .Rules {
+            width: 657px;
+            border-collapse: collapse;
+            table-layout: fixed;
+            font-size: 12px;
+        }
+
+            .Rules th {
+                height: 25px;
+                background: #eeeeee;
+                border-bottom: 1px solid #cccccc;
+                color: #333333;
+                font-weight: bold;
+                text-align: left;
+                padding: 5px 8px;
+            }
+
+                .Rules th.topic {
+                    width: 395px;
+                }
+
+                .Rules th.posts {
+                    width: 55px;
+                    text-align: center;
+                }
+
+                .Rules th.views {
+                    width: 58px;
+                    text-align: center;
+                }
+
+                .Rules th.last {
+                    width: 149px;
+                }
+
+            .Rules td {
+                height: 54px;
+                border-bottom: 1px solid #e1e1e1;
+                vertical-align: middle;
+                padding: 5px 8px;
+            }
+
+                .Rules td.number {
+                    text-align: center;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+        .topic-title {
+            color: #2878a8;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+
+            .topic-title:hover {
+                text-decoration: underline;
+            }
+
+        .posted {
+            margin-top: 3px;
+            margin-left: 20px;
+            font-size: 10px;
+            line-height: 12px;
+            color: #555;
+        }
+
+            .posted a {
+                color: #2878a8;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                .posted a:hover {
+                    text-decoration: underline;
+                }
+
+        .last-post {
+            color: #4f8caf;
+            font-size: 10px;
+            line-height: 13px;
+        }
+
+            .last-post .date {
+                color: #4f8caf;
+            }
+
+            .last-post .by {
+                color: #999999;
+            }
+
+        .lock-icon {
+            display: inline-block;
+            position: relative;
+            width: 12px;
+            height: 11px;
+            margin-right: 5px;
+            vertical-align: middle;
+            background: #f0a500;
+            border: 1px solid #c88a00;
+            border-radius: 1px;
+        }
+
+            .lock-icon::before {
+                content: "";
+                position: absolute;
+                width: 7px;
+                height: 6px;
+                left: 1px;
+                top: -6px;
+                border: 2px solid #777;
+                border-bottom: 0;
+                border-radius: 6px 6px 0 0;
+            }
+
+            .lock-icon::after {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 4px;
+                background: white;
+                left: 4px;
+                top: 3px;
+            }
+
+        .comment-icon {
+            display: inline-block;
+            position: relative;
+            width: 13px;
+            height: 10px;
+            margin-right: 5px;
+            vertical-align: middle;
+            border: 1.5px solid #6aa4c5;
+            border-radius: 5px;
+        }
+
+            .comment-icon::after {
+                content: "";
+                position: absolute;
+                left: 1px;
+                bottom: -4px;
+                width: 0;
+                height: 0;
+                border-top: 4px solid #6aa4c5;
+                border-right: 4px solid transparent;
+            }
+    </style>
+</head>
+
+<body>
+
+    <table class="Rules">
+        <tr>
+            <th class="topic">Topic</th>
+            <th class="posts">Posts</th>
+            <th class="views">Views</th>
+            <th class="last">Last Post</th>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="lock-icon"></span>
+                <a href="#" class="topic-title">
+                    Posting Guidelines
+                </a>
+
+                <div class="posted">
+                    Posted in
+                    <a href="#">Please Read First!</a>
+                    by Joe Gillespie
+                </div>
+            </td>
+
+            <td class="number">1</td>
+
+            <td class="number">288</td>
+
+            <td class="last-post">
+                <span class="date">Dec 21, 2003</span><br>
+                <span class="by">by Joe Gillespie</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="lock-icon"></span>
+                <a href="#" class="topic-title">
+                    Forum Rules
+                </a>
+
+                <div class="posted">
+                    Posted in
+                    <a href="#">Please Read First!</a>
+                    by Joe Gillespie
+                </div>
+            </td>
+
+            <td class="number">1</td>
+
+            <td class="number">2023</td>
+
+            <td class="last-post">
+                <span class="date">Dec 21, 2003</span><br>
+                <span class="by">by Joe Gillespie</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="comment-icon"></span>
+                <a href="#" class="topic-title">
+                    A suitable Word Template
+                </a>
+
+                <div class="posted">
+                    Posted in
+                    <a href="#">Web Design Software</a>
+                    by Wilson Lagg
+                </div>
+            </td>
+
+            <td class="number">2</td>
+
+            <td class="number">199</td>
+
+            <td class="last-post">
+                <span class="date">Mar 28, 2008</span><br>
+                <span class="by">by Shahzad Asif</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="comment-icon"></span>
+                <a href="#" class="topic-title">
+                    few HTML and CSS issues
+                </a>
+
+                <div class="posted">
+                    Posted in
+                    <a href="#">Layout</a>
+                    by Jade M
+                </div>
+            </td>
+
+            <td class="number">3</td>
+
+            <td class="number">1</td>
+
+            <td class="last-post">
+                <span class="date">Mar 28, 2008</span><br>
+                <span class="by">by Shahzad Asif</span>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
